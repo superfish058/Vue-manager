@@ -1,6 +1,6 @@
 <template>
 	<div>
-		welcome
+		你好
 	</div>
 </template>
 

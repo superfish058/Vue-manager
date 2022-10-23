@@ -250,7 +250,6 @@
 				} = await this.$https.get('users', {
 					params: this.userQuery
 				})
-				console.log(res);
 				if (res.meta.status == 200) {
 					this.userData = res.data.users
 					this.total = res.data.total
@@ -372,7 +371,6 @@
 			},
 			getNewRole(){
 				this.$https.put(`users/${this.userInfo.id}/role`,{rid:this.roleSelectedId}).then(res => {
-					console.log(res);
 					if(res.data.meta.status == 200){
 						this.$message.success('分配角色成功')
 						this.getUserData()

@@ -175,7 +175,6 @@
 					const {
 						data: res
 					} = await this.$https.delete(`roles/${role.id}/rights/${rightid}`)
-					console.log(res);
 					role.children = res.data
 					this.$message({
 						type: 'success',
@@ -225,7 +224,6 @@
 			//增加新角色
 			addNewRole() {
 				this.$https.post('roles', this.addForm).then(res => {
-					console.log(res);
 					if (res.data.meta.status == 201) {
 						this.$message.success('添加成功')
 						this.getRolesList()
@@ -243,7 +241,6 @@
 			//设置编辑对话框
 			setEditForm(role) {
 				this.editVisible = true,
-				console.log(role);
 				this.editForm.roleId = role.id
 				this.editForm.roleName = role.roleName
 				this.editForm.roleDesc = role.roleDesc
@@ -254,7 +251,6 @@
 					roleName: this.editForm.roleName,
 					roleDesc: this.editForm.roleDesc
 				}).then(res => {
-					console.log(res);
 					if (res.data.meta.status == 200) {
 						this.$message.success('设置成功')
 						this.getRolesList()
@@ -273,7 +269,6 @@
 					type: 'warning'
 				}).then(() => {
 					this.$https.delete(`roles/${role.id}`).then(res => {
-						console.log(res);
 						if (res.data.meta.status == 200) {
 							this.$message.success('删除成功')
 						} else {
