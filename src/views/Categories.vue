@@ -167,7 +167,6 @@
 				this.$https.put(`categories/${this.editCateInfo.id}`, {
 					cat_name: this.editCateInfo.name
 				}).then(res => {
-					console.log(res);
 					if (res.data.meta.status == 200) {
 						this.$message.success('修改分类成功')
 						this.getCategories()

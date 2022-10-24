@@ -6,10 +6,13 @@
 
 <script>
 	export default {
-		
+
 	}
 </script>
 
-<style >
+<style>
+	.el-cascader-panel {
+		height: 250px;
+	}
 
 </style>

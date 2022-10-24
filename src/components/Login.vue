@@ -70,7 +70,6 @@
 					const {
 						data: res
 					} = await this.$https.post('login', this.loginForm)
-					console.log(res);
 					if (res.meta.status == 200) {
 						this.$message({
 							showClose: true,

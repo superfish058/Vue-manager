@@ -7,6 +7,7 @@ import Users from '@/views/Users.vue'
 import Rights from '@/views/Rights.vue'
 import Roles from '@/views/Roles.vue'
 import Categories from '@/views/Categories.vue'
+import Cateparams from '@/views/Cateparams.vue'
 Vue.use(VueRouter)
 
 const router = new VueRouter({
@@ -42,6 +43,10 @@ const router = new VueRouter({
 					path: 'categories',
 					component: Categories
 				},
+				{
+					path: 'params',
+					component: Cateparams
+				}
 			]
 		}
 	]

@@ -80,7 +80,6 @@
 				const {
 					data: res
 				} = await this.$https.get('menus')
-				console.log(res);
 				if (res.meta.status != 200) {
 					this.$message.error(res.meta.msg)
 				}
