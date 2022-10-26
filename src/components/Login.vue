@@ -31,8 +31,8 @@
 			return {
 				//表单数据
 				loginForm: {
-					username: '',
-					password: ''
+					username: 'admin',
+					password: '123456'
 				},
 				//输入规则
 				rules: {

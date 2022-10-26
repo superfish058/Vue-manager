@@ -52,7 +52,7 @@
 							</el-table-column>
 							<el-table-column prop="attr_name" label="参数名称" width="500">
 							</el-table-column>
-							<el-table-column prop="" label="操作">
+							<el-table-column  label="操作">
 								<template v-slot="scope">
 									<el-button type="primary" size="small" @click="attredit(scope.row)"><i
 											class="el-icon-edit"></i>编辑</el-button>
